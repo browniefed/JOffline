@@ -1,0 +1,16 @@
+{
+  "name": "JOffline",
+  "description": "Jama OffLine Application.",
+  "version": "0.1",
+  "main": "index.html",
+  "window": {
+    "show": true,
+    "toolbar": false,
+    "frame": true,
+    "position": "center",
+    "width": 1024,
+    "height": 768,
+    "min_width": 1024,
+    "min_height": 768
+  }
+}

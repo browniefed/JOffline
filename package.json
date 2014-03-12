@@ -1,0 +1,23 @@
+{
+  "name": "JOffline",
+  "version": "0.0.1",
+  "description": "JOffline is an offline Jama",
+  "main": "app/frameless_window.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/browniefed/JOffline.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/browniefed/JOffline/issues"
+  },
+  "homepage": "https://github.com/browniefed/JOffline",
+  "devDependencies": {
+    "grunt": "^0.4.3",
+    "grunt-node-webkit-builder": "^0.1.17"
+  }
+}
