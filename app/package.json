@@ -3,6 +3,8 @@
   "description": "Jama OffLine Application.",
   "version": "0.1",
   "main": "login.html",
+  "js-flags": "--harmony",
+  "single-instance:": true,
   "window": {
     "show": true,
     "toolbar": true,
@@ -12,6 +14,8 @@
     "height": 768,
     "min_width": 1024,
     "min_height": 768,
-    "icon": "/img/jama-logo.png"
+    "resizable": true,
+    "show_in_taskbar": true,
+    "icon": "img/jama-logo.png"
   }
 }
