@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 	  nodewebkit: {
 	    options: {
 	    	version: '0.8.5',
-	        build_dir: './webkitbuilds', // Where the build version of my node-webkit app is saved
+	        build_dir: './builds', // Where the build version of my node-webkit app is saved
 	        mac: true, // We want to build it for mac
 	        win: true, // We want to build it for win
 	        linux32: false, // We don't need linux32

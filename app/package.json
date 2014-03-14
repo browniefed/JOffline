@@ -1,7 +1,7 @@
 {
   "name": "JOffline",
   "description": "Jama OffLine Application.",
-  "version": "0.1",
+  "version": "0.0.1",
   "main": "login.html",
   "js-flags": "--harmony",
   "single-instance:": true,
@@ -12,10 +12,14 @@
     "position": "center",
     "width": 1024,
     "height": 768,
-    "min_width": 1024,
-    "min_height": 768,
+    "min_width": 500,
+    "min_height": 500,
     "resizable": true,
     "show_in_taskbar": true,
     "icon": "img/jama-logo.png"
+  },
+  "dependencies": {
+    "nedb": "^0.10.4",
+    "co-nedb": "^1.0.0"
   }
 }
