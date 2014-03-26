@@ -58,25 +58,11 @@ $('.js-login-btn').on('click', function() {
     };
 
     request(options, function() {
-        doRestCallForProject()
+        //Check for error
+        global.jamaJar = jar;
+        window.location.href = 'index.html';
     });
     
 });
 
 
-var doRestCallForProject = function() {
-
-    var options = {
-        url: 'https://www.jamaland.com:443/rest/projects',
-        method: 'get',
-        jar: jar,
-        rejectUnauthorized: false,
-        headers: {
-            'Accept':'application/json'
-        }
-    };
-
-    request(options, function(e, r, body) {
-        console.log(arguments);
-    });
-}
