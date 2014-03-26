@@ -13,10 +13,32 @@ module.exports = function(grunt) {
 	    },
 	    src: './app/**/*'// Your node-wekit app
 	  },
+	  emberTemplates: {
+	  	compile: {
+			options: {
+				templateBasePath: 'app/templates'
+			},
+			files: {
+				'app/js/templates.js' : ['app/templates/*.hbs','app/templates/**/*.hbs']
+			}
+		}
+		},
+		watch : {
+			build: {
+				files: ['app/templates/**/*.hbs', 'app/templates/*.hbs'],
+				tasks: ['build'],
+				options: {
+					debounceDealy: 1000
+				}
+			}
+		}
 	});
 
+	grunt.loadNpmTasks('grunt-ember-templates');
 	grunt.loadNpmTasks('grunt-node-webkit-builder');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 
-	grunt.registerTask( 'default', ['nodewebkit']);
+	grunt.registerTask( 'default', ['emberTemplates', 'nodewebkit']);
+	grunt.registerTask( 'build', ['emberTemplates'])
 }

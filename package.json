@@ -18,6 +18,9 @@
   "homepage": "https://github.com/browniefed/JOffline",
   "devDependencies": {
     "grunt": "^0.4.3",
-    "grunt-node-webkit-builder": "^0.1.17"
+    "grunt-node-webkit-builder": "^0.1.17",
+    "handlebars": "^1.3.0",
+    "ember-template-compiler": "^1.5.0-beta.4",
+    "grunt-ember-templates": "^0.4.20"
   }
 }
